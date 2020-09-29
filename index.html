@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medx Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- <link rel="stylesheet" href="assets/css/utils.css"> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/images/logo-big.png" height="30px" alt="" />
+      <span class="display-6">LAW Offices of Saeed Soltani</span>
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <div class="text-center m-auto w-25 h2 font-weight-bold text-primary">
+        Client Chart - WC
+      </div>
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item m-1 active">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <svg class="bi" width="16" height="16" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#house-fill" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <svg class="bi" width="16" height="16" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#bell-fill" />
+            </svg>
+            Task Alert
+          </a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <svg class="bi" width="16" height="16" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#bell-fill" />
+            </svg>
+            Task
+          </a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <svg class="bi" width="16" height="16" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#question-circle-fill" />
+            </svg>
+            Help
+          </a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <i class="fa fa-dashboard"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link btn btn-primary text-white" href="#">
+            <svg class="bi" width="16" height="16" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#door-closed-fill" />
+            </svg>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="wrapper mb-2">
+    <div class="container-fluid bg-head-color py-2 px-3">
+      <form class="form-inline text-black-color font-weight-bold user-details__form flex justify-content-between">
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">case No.</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-50"
+            aria-describedby="textHelpInline">
+        </div>
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Firstname:</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-100"
+            aria-describedby="textHelpInline">
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Lastname:</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-100"
+            aria-describedby="textHelpInline">
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Middle Name:</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-100"
+            aria-describedby="textHelpInline">
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Sex:</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="female" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="female">F</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline mr-sm-4">
+            <input type="radio" id="male" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="male">M</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Birthdate</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-100"
+            aria-describedby="textHelpInline">
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Age</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-50"
+            aria-describedby="textHelpInline">
+        </div>
+
+        <div class="form-group">
+          <label class="my-1 mr-2" for="inputtext6">Adj No.</label>
+          <input type="text" id="inputtext6" class="form-control my-1 mr-sm-3 bg-inputs-color width-50"
+            aria-describedby="textHelpInline">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrapper mb-2 px-2">
+    <ul class="nav nav-tabs mb-2 d-flex">
+      <li class="nav-item client-tab px-1">
+        <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link active">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Chart History</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link ">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Intake</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Insurance / Employer / AA / DA Info</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Injury Information</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Client Photos / Docs</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Case Events</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">EAMS (ADJ No)</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1">
+        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">EAMS</span>
+        </a>
+      </li>
+      <li class="nav-item client-tab px-1 align-self-end">
+        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">EAMS Message Log Info</span>
+        </a>
+      </li>
+
+      <li class="nav-item client-tab px-1 ml-auto">
+        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+          <i class="fa fa-home d-md-none d-block"></i>
+          <span class="d-none d-md-block">Add New Case <i class="fa fa-chevron-down"></i> </span>
+        </a>
+      </li>
+    </ul>
+    <div class="container-fluid px-2 tabs-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-content">
+            <!-- //tab-pane start here -->
+            <div class="tab-pane show active" id="home">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div>
+                      <small class="text-muted font-weight-bold">Status : </small>
+                      <span class="h6 text-capitalize pl-3"><i class="fa fa-circle text-primary"></i> completed</span>
+                      <span class="h6 text-capitalize pl-3"><i class="fa fa-circle text-danger"></i> uncomplete </span>
+                      <span class="h6 text-capitalize pl-3"><i class="fa fa-circle text-success"></i> unsaved</span>
+                    </div>
+                    <div
+                      class="font-weight-bold text-black-color bg-primary-light border border-primary-dark py-2 px-100 rounded">
+                      Intake</div>
+                    <div>
+                      <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group flex-nowrap">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Search..." aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 d-flex my-2">
+                    <div class="sidebar-container px-0">
+                      <div class="left-side-menu left-side-menu-detached">
+                        <div class="menu-wrapper mb-2">
+                          <div class="menu-item menu-main-item bg-primary-light border-primary-dark"
+                            data-toggle="collapse" data-target="#menu1" aria-controls="menu1" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button">
+                              Question
+                            </button>
+                            <i class="fa fa-chevron-down float-right align-baseline"></i>
+                          </div>
+                          <div class="collapse sub-menus" id="menu1">
+                            <div class="bg-transparent p-y2">
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"></span> <a href=""
+                                  class="link text-black-color">item</a> </div>
+                              <div class="sub-menu-item"> <span class="bullet bg-success"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-danger"></span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="menu-wrapper mb-2">
+                          <div class="menu-item menu-main-item bg-success-light border-success-dark"
+                            data-toggle="collapse" data-target="#menu2" aria-controls="menu2" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button">
+                              Question
+                            </button>
+                            <i class="fa fa-chevron-down float-right align-baseline"></i>
+                          </div>
+                          <div class="collapse sub-menus" id="menu2">
+                            <div class="bg-transparent p-y2">
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"></span> <a href=""
+                                  class="link text-black-color">item</a> </div>
+                              <div class="sub-menu-item"> <span class="bullet bg-success"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-danger"></span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="menu-wrapper mb-2">
+                          <div class="menu-item menu-main-item bg-danger-light border-danger-dark"
+                            data-toggle="collapse" data-target="#menu3" aria-controls="menu3" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button">
+                              Question
+                            </button>
+                            <i class="fa fa-chevron-down float-right align-baseline"></i>
+                          </div>
+                          <div class="collapse sub-menus" id="menu3">
+                            <div class="bg-transparent p-y2">
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"></span> <a href=""
+                                  class="link text-black-color">item</a> </div>
+                              <div class="sub-menu-item"> <span class="bullet bg-success"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-danger"></span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="menu-wrapper mb-2">
+                          <div class="menu-item menu-main-item bg-warning-light border-warning-dark"
+                            data-toggle="collapse" data-target="#menu4" aria-controls="menu4" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button">
+                              Question
+                            </button>
+                            <i class="fa fa-chevron-down float-right align-baseline"></i>
+                          </div>
+                          <div class="collapse sub-menus" id="menu4">
+                            <div class="bg-transparent p-y2">
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"></span> <a href=""
+                                  class="link text-black-color">item</a> </div>
+                              <div class="sub-menu-item"> <span class="bullet bg-success"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-danger"></span><a href=""
+                                  class="link text-black-color">item</a></div>
+                              <div class="sub-menu-item"> <span class="bullet bg-primary"> </span><a href=""
+                                  class="link text-black-color">item</a></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="forms-container">
+                      forms wrapper
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="profile">
+              <p>test</p>
+            </div>
+            <div class="tab-pane" id="settings">
+              <p>soltoon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
